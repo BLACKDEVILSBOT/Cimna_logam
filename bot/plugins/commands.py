@@ -71,8 +71,6 @@ async def help(bot, update):
     ],[
         InlineKeyboardButton('Close 🔐', callback_data='close')
     ]]
-   
-
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await bot.send_message(
