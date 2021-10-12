@@ -50,7 +50,10 @@ async def start(bot, update):
         InlineKeyboardButton('Group', url='https://t.me/CinemaLokhm'),
         InlineKeyboardButton('🔒 Close', callback_data='close')
     ],[
-    reply_markup = InlineKeyboardMarkup(buttons)
+  
+
+reply_markup = InlineKeyboardMarkup(buttons)
+
     
     await bot.send_message(
         chat_id=update.chat.id,
